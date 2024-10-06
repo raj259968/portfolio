@@ -5,22 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects - Portfolio</title>
     <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 12px;
+        }
+        header {
+            background-color: #4c6177;
+            color: #ecf0f1;
+            padding: 0 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .logo h1 {
+            color: #ecf0f1;
+            margin-top:15px ;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            font-size: 18px;
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 15px;
             background-color: #f4f4f4;
         }
-        header {
+        div {
             text-align: center;
             margin-bottom: 40px;
         }
         h1 {
-            color: #2c3e50;
+            color: #95a8bb;
         }
+
+       
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -71,10 +152,31 @@
     </style>
 </head>
 <body>
+
     <header>
+        <nav class="container">
+           <div class="logo"><h1>RAJ RAJPUT</h1><span>PORTFOLIO</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="indexAbout.html">About</a></li>
+                <li><a href="indexProject.html">Project</a></li>
+                <li><a href="indexContact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <h1><b>My Projects</b></h1>
+        <p>A showcase of my recent work and contributions</p>
+        <p> -------</p>
+    </div>
+
+    
+
+    <div>
         <h1>My Projects</h1>
         <p>A showcase of my recent work and contributions</p>
-    </header>
+    </div>
 
     <main class="projects-grid">
         <article class="project-card">
